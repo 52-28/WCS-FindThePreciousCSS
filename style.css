@@ -1,0 +1,598 @@
+
+@font-face {
+  font-family: 'RingbearerMedium';
+  src: url('font/RingbearerMedium.eot?#iefix') format('font/embedded-opentype'),  url('font/RingbearerMedium.woff') format('woff'), url('font/RingbearerMedium.ttf')  format('truetype'), url('font/RingbearerMedium.svg#RingbearerMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, caption
+{
+	font-family: 'RingbearerMedium';
+	margin:0;
+	padding:0;
+}
+
+h2
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    margin:0;
+    padding:10px;
+}
+
+h3
+{
+    font-size: 1.5em;
+    margin:0;
+    padding:10px;
+}
+
+span
+{
+	color: orange;
+}
+
+/***********************************************************/
+/********************nav + header***************************/
+/***********************************************************/
+
+header
+{
+	margin: 0;
+	padding: 0; 
+	color:black;
+	background-color:black;
+	with:100%;
+	height: auto;
+	top:0;
+}
+
+#top h1
+{
+	float:left;
+	margin:0;
+	padding:0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
+}
+
+#top ul
+{
+	display:flex;
+	list-style: none;
+	justify-content: flex-end;
+	align-items:center;
+	flex-wrap: wrap;
+	margin:0;
+	padding:0;
+}
+
+#top li
+{
+	margin:10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#carroussel1
+{
+	width:100%;
+	position: relative;
+	margin:0;
+	padding:0;
+	background-color: black;
+	background-size: cover;
+ 	background-overflow:visible;
+}
+#bloctexte
+{
+	position: absolute;
+	top: 40%;
+	left:50%;
+  	transform: translate(-50%, -50%);
+  	z-index:2;
+  	text-align:center;
+
+}
+
+#carroussel p
+{
+  	background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+}
+
+/***********************************************************/
+/********************Fellows********************************/
+/***********************************************************/
+
+#fellows
+{
+	padding:0;
+	margin:0;
+	background: url("img/fontFellows3.jpg");
+	background-position: top;
+	background-size: contain;
+}
+
+
+#title
+{
+	display:flex;
+	align-items: center;
+	margin:0;
+	  background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title p
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+}
+
+#fellowsUl
+{
+	display:flex;
+	list-style: none;
+	justify-content: space-between;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	border-radius: 70px;
+}
+
+
+.portrait_container
+{
+	position:relative;
+	text-align: center;
+	width: 30%;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.imgPortrait
+{
+	max-width: 85%;
+	height:auto;
+	opacity: 0.5;
+	border-radius: 20px;
+	z-index: 2;
+	width:300px;
+	height:400px;
+}
+
+.reward
+{
+ 	position: absolute;
+  	top: 10%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 2.5em;
+  	background-color: white;
+  	width: 70%;
+  	max-width:90%;
+  	z-index: 2;
+  	opacity:0.9;
+  	border-radius: 20px;
+}
+
+.h2portrait
+{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);	
+  	font-size: 5em;
+  	color: white;
+  	max-width: 100%;
+}
+
+.paragraphe
+
+{
+	background-color: white
+}
+
+
+.portrait:hover .imgPortrait
+{
+	opacity: 1;
+	z-index: 2;
+}
+.portrait:hover .reward
+{
+	opacity:0;
+}
+
+.portrait:hover #deadlogo
+{
+	opacity:1;
+}
+
+
+.portrait:hover .h2portrait
+{
+	top: 80%;
+	font-size: 2em;
+}
+
+
+#pourFlex
+{
+	display:flex;
+	justify-content: center;
+}
+
+#deadlogo
+{
+  	position: absolute;
+	z-index:3;
+	top:50%;
+  	left: 50%;
+  	max-width: 70%;
+  	width:70%;
+  	transform: translate(-50%, -50%);
+	opacity:0;
+
+}
+
+/***********************************************************/
+/********************Captured********************************/
+/***********************************************************/
+
+#Captured
+{
+	background: url("img/blood.jpg");
+	background-position: top;
+	background-size: contain;
+	padding-bottom:10px;
+}
+
+#flexcaptured
+{
+
+	max-height: 140px;
+}
+
+#Captured img
+{
+	float: right;
+	margin-top:18px;
+	padding:20px;
+}
+
+/***********************************************************/
+/********************Buttons********************************/
+/***********************************************************/
+
+.button
+{
+	background:    #000000;
+	background:    linear-gradient(#000000, #ff9900);
+	border-radius: 5px;
+	padding:       8px 20px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal bold "RingbearerMedium", cursive;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+
+}
+.divbutton
+{
+	width:30%;
+	min-width:30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***********************************************************/
+/********************Best***********************************/
+/***********************************************************/
+
+#best
+{
+	clear:both;
+	background: url("img/reward.jpg");
+	background-position: top-left;
+	background-size: cover;
+	height:570px;
+}
+
+#flexcaptured p
+{
+	overflow: auto;
+	max-width:70%;
+	max-height:70px;
+	color:white;
+}
+
+/***********************************************************/
+/********************About***********************************/
+/***********************************************************/
+
+table 
+{
+	border:3px solid #FFB900;
+	border-collapse:collapse;
+	width:90%;
+	margin:auto;
+
+}
+
+thead, tfoot 
+{
+	font-family: 'RingbearerMedium';
+	border:1px solid #FFB900;
+	justify-content: center;
+}
+
+tbody 
+{
+	font-family: 'RingbearerMedium';
+	background-color:#FFFFFF;
+	border:1px solid #FFB900;
+}
+
+th 
+{
+	font-family: 'RingbearerMedium';
+	border:1px dotted #FFB900;
+	padding:5px;
+	background-image: url('img/1.jpg');
+	background-size:contain;
+	background-color:#EFF6FF;
+	width:25%;
+	color:white;
+}
+
+td 
+{
+	justify-content: center
+	font-family: 'RingbearerMedium';
+	font-size:80%;
+	border:1px solid #FFB900;
+	padding:5px;
+	text-align:center;
+}
+
+tr:nth-child(even) 
+{
+	background: white;
+	color:black;
+}
+
+
+tr:nth-child(odd) 
+{
+	background: #FF7C00;
+	color:white;
+}
+
+#capTitle
+{
+	background-image: url('img/1.jpg') !important;		 
+	background-size:contain !important;              
+	background-color : black !important;             
+	color:white !important;							 
+	margin:auto !important;                          
+	padding-top:5px !important;						 
+	margin-bottom:10px !important;					 
+  	width:auto !important;                           
+  	height:auto !important;                       
+  	border-top-left-radius: 20px !important;		
+   	border-top-right-radius: 20px !important;		
+  	padding-left: 10px !important;		
+}
+
+#Capabilities
+{
+	width:60%;
+	border: 1px solid black;
+	border-radius: 20px 20px;
+	padding:0 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+
+}
+
+caption
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(black), to(#B22222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	
+}
+
+#about_ring
+{
+	background: url("img/nazgul.jpg");
+	background-position: top-left;
+	background-size: cover;	
+}
+
+#Awesome h3
+{
+	background-image: url('img/1.jpg') !important;		 
+	background-size:contain !important;              
+	background-color : black !important;             
+	color:white !important;							 
+	margin:auto !important;                          
+	padding-top:5px !important;						 
+	margin-bottom:10px !important;					 
+  	width:auto !important;                           
+  	height:auto !important;                       
+  	border-top-left-radius: 20px !important;		
+   	border-top-right-radius: 20px !important;		
+  	padding-left: 10px !important;		
+}
+
+#Awesome
+{
+	margin-top:20px;
+	width:60%;
+	border: 1px solid black;
+	border-radius: 20px 20px;
+	padding:0 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+#Awesome img
+{
+ border-radius:110px;
+}
+
+#awe2
+{
+	display:flex;
+	padding:10px;
+	justify-content: center;
+}
+
+/***********************************************************/
+/********************Join***********************************/
+/***********************************************************/
+
+#Join
+{	
+	background-image: url('img/Fortress_War_The_Lord_of_504368.jpg');		 
+	background-size:cover;              
+	background-color : black; 
+	color:white;   
+}
+
+#First, #second
+{
+	display:flex;
+	justify-content: space-around;
+	width:33%;
+}
+
+#bestPersonas
+{
+	display:flex;
+	align-items: flex-end;
+	color:white;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#firstDescrption, #secondDescrption
+{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-start;
+	margin:0;
+	padding:0;
+}
+
+.bestprofile
+{
+	width:33%;
+}
+
+#Contact
+{
+	background-image: url('img/dark-side-cookies-fond_rouge-tango.jpg'), url('img/626072.jpg');
+	background-repeat: no-repeat;
+	height:330px;
+	clear:both;
+}
+
+#Join
+{
+	height:230px;
+}
+
+#Join img
+{
+	float:left;
+	margin: 10px;
+	width:140px;
+	height:140px;
+}
+
+#Join p
+{
+	overflow:auto;
+	max-width:80%;
+	max-height: 70px;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+
+
+/***********************************************************/
+/********************Contact form***************************/
+/***********************************************************/
+
+#formText
+{height:120px;}
+
+#form
+{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	width:40%;
+	margin-left:30%;
+}
+#form input, #form select, #form option, #form textarea
+{
+	margin:10px;
+	border: 2px solid black;
+}
+
+/***********************************************************/
+/********************Footer*********************************/
+/***********************************************************/
+
+#footersections
+{
+	display:flex;
+	color:white;
+	height:120px;
+	background-image: url('img/1.jpg');
+	background-position: top-left;
+	background-size: contain;	
+}
+
+footer ul
+{
+	list-style: none;
+	width:100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	padding:0;
+}
+
+footer a:link,footer a:visited 
+{
+	color: white;
+}
+
+footer a:hover
+{
+	color: red;
+}
